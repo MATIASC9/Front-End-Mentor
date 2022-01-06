@@ -1,8 +1,93 @@
-@import url("https://fonts.google.com/specimen/Outfit");
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: #0d192b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .tarjeta {
+  background-color: #14253d;
+  border-radius: 15px;
+  box-shadow: 12px 15px 30px 0px rgba(0, 0, 0, 0.486);
+  padding: 20px;
+  width: 90%;
+}
+body .tarjeta__imgNft {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+body .tarjeta__titulo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 15px;
+}
+body .tarjeta__descripcion {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #8bacda;
+  margin-bottom: 15px;
+  line-height: 25px;
+  width: 80%;
+}
+body .tarjeta__contenedorPyT {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #2f415b;
+  font-size: 1rem;
+}
+body .tarjeta__contenedorPrecio {
+  display: flex;
+  align-items: center;
+}
+body .tarjeta__logoEth {
+  margin-right: 5px;
+}
+body .tarjeta__precio {
+  color: #00fff7;
+}
+body .tarjeta__contenedorTiempoRestante {
+  display: flex;
+  align-items: center;
+}
+body .tarjeta__iconoReloj {
+  margin-right: 5px;
+}
+body .tarjeta__tiempoRestante {
+  color: #8bacda;
+}
+body .tarjeta__contenedorAutor {
+  display: flex;
+  align-items: center;
+}
+body .tarjeta__avatar {
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 15px;
+}
+body .tarjeta__autor {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #8bacda;
+}
+body .tarjeta__autor__nombre {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

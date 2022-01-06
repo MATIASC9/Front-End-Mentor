@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.webp"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <body>
+    <div class="tarjeta">
+      <img src="images/image-equilibrium.webp" alt="equilibrium nft" class="tarjeta__imgNft" />
+      <div class="tarjeta__infoNft">
+        <h3 class="tarjeta__titulo">Equilibrium #3429</h3>
+        <p class="tarjeta__descripcion">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="tarjeta__contenedorPyT">
+          <div class="tarjeta__contenedorPrecio">
+            <img class="tarjeta__logoEth" src="images/icon-ethereum.svg" alt="logo ethereum">
+            <span class="tarjeta__precio">0.041 ETH</span>
+          </div>
+          <div class="tarjeta__contenedorTiempoRestante">
+            <img class="tarjeta__iconoReloj" src="images/icon-clock.svg" alt="icono reloj">
+            <span class="tarjeta__tiempoRestante">3 days left</span>
+          </div>
+        </div>
+        <div class="tarjeta__contenedorAutor">
+          <img class="tarjeta__avatar" src="images/image-avatar.webp" alt="foto del autor">
+          <p class="tarjeta__autor">
+            Creation of&nbsp<span class="tarjeta__autor__nombre">Matias Carrizo</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
