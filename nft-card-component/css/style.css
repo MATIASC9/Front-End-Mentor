@@ -90,4 +90,10 @@ body .tarjeta__autor__nombre {
   color: white;
 }
 
+@media screen and (min-width: 375px) {
+  .tarjeta {
+    max-width: 375px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
