@@ -1,0 +1,10 @@
+@media screen and (min-width: 375px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-position-y: top;
+    background-size: 130%;
+    .tarjeta {
+      max-width: 375px;
+    }
+  }
+}

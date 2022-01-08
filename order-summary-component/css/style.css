@@ -7,8 +7,8 @@
 
 body {
   background-image: url(../images/pattern-background-mobile.svg);
+  background-position-y: top;
   background-size: cover;
-  background-position: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #e0e8ff;
@@ -56,7 +56,7 @@ body .tarjeta__contenedorPlan {
   background-color: #f5f7ff;
   padding: 20px 15px;
   border-radius: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 body .tarjeta__contenedorPlan__icono {
   margin-right: 20px;
@@ -104,6 +104,17 @@ body .tarjeta__contenedorPlan__btnCancelar {
 }
 body .tarjeta__contenedorPlan__btnCancelar:hover {
   color: black;
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-position-y: top;
+    background-size: 130%;
+  }
+  body .tarjeta {
+    max-width: 375px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
