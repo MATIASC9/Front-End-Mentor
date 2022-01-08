@@ -6,8 +6,8 @@
 }
 body {
   background-image: url(../images/pattern-background-mobile.svg);
+  background-position-y: top;
   background-size: cover;
-  background-position: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: hsl(225, 100%, 94%);
@@ -55,7 +55,7 @@ body {
       background-color: hsl(225, 100%, 98%);
       padding: 20px 15px;
       border-radius: 10px;
-      margin-bottom: 15px;
+      margin-bottom: 30px;
 
       &__icono {
         margin-right: 20px;
