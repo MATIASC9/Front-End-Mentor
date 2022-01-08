@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #e0e8ff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  border-radius: 15px;
+  background-color: #fff;
+  padding-bottom: 50px;
+  box-shadow: 15px 15px 40px 10px #7280a7;
+}
+body .tarjeta__imgTop {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 30px;
+}
+body .tarjeta__titulo {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+body .tarjeta__descripcion {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #7280a7;
+  width: 80%;
+}
+body .tarjeta__contenedorPlan {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  width: 90%;
+  background-color: #f5f7ff;
+  padding: 20px 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+body .tarjeta__contenedorPlan__icono {
+  margin-right: 20px;
+}
+body .tarjeta__contenedorPlan__contenedorDatosPlan {
+  display: flex;
+  flex-direction: column;
+}
+body .tarjeta__contenedorPlan__contenedorDatosPlan__tipoPlan {
+  font-weight: 700;
+}
+body .tarjeta__contenedorPlan__contenedorDatosPlan__precio {
+  font-size: 0.9rem;
+  color: #7280a7;
+}
+body .tarjeta__contenedorPlan__btnCambiar {
+  font-size: 0.8rem;
+  color: #3829e0;
+  font-weight: 700;
+}
+body .tarjeta__contenedorPlan__btnCambiar:hover {
+  color: #544ac4;
+  text-decoration: none;
+}
+body .tarjeta__contenedorPlan__btnPagar {
+  background-color: #3829e0;
+  text-decoration: none;
+  width: 90%;
+  padding: 15px 0;
+  border-radius: 10px;
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  box-shadow: 5px 10px 40px 0 #7280a7;
+}
+body .tarjeta__contenedorPlan__btnPagar:hover {
+  background-color: #544ac4;
+}
+body .tarjeta__contenedorPlan__btnCancelar {
+  text-decoration: none;
+  font-weight: 700;
+  color: #7280a7;
+}
+body .tarjeta__contenedorPlan__btnCancelar:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
