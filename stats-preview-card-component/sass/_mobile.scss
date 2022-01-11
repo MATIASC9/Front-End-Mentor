@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter',  sans-serif;
+}
+body {
+  background-color: hsl(233, 47%, 7%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(244, 38%, 16%);
+    width: 85%;
+    border-radius: 10px;
+    text-align: center;
+
+    &__Img {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px 10px 0 0;
+      background: linear-gradient( hsla(277, 64%, 61%, 0.4), hsl(277, 64%, 61%, 0.4)), url('../images/image-header-mobile.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 40px;
+    }
+    &__titulo {
+      width: 75%;
+      color: #fff;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+
+      &__textoPurpura {
+        color: hsl(277, 64%, 61%);
+      }
+    }
+    &__detalles {
+      width: 80%;
+      color: hsla(0, 0%, 100%, 0.75);
+      font-size: 0.9rem;
+      font-weight: 400;
+      margin-bottom: 30px;
+      line-height: 25px;
+    }
+    &__contenedorEstadisticas {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100px;
+      margin-bottom: 30px;
+      
+      &__dato {
+        font-size: 1.6rem;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        gap: 10px;
+        
+        &__textoGris {
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          font-weight: 400;
+          color: hsla(0, 0%, 100%, 0.6);
+          font-family: 'Lexend Deca', sans-serif;
+        }
+      }
+    }
+  }
+}

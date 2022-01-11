@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #090b1a;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1b1938;
+  width: 85%;
+  border-radius: 10px;
+  text-align: center;
+}
+body .tarjeta__Img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(rgba(170, 92, 219, 0.4), rgba(170, 92, 219, 0.4)), url("../images/image-header-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+body .tarjeta__titulo {
+  width: 75%;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+body .tarjeta__titulo__textoPurpura {
+  color: #aa5cdb;
+}
+body .tarjeta__detalles {
+  width: 80%;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  line-height: 25px;
+}
+body .tarjeta__contenedorEstadisticas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100px;
+  margin-bottom: 30px;
+}
+body .tarjeta__contenedorEstadisticas__dato {
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  gap: 10px;
+}
+body .tarjeta__contenedorEstadisticas__dato__textoGris {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
