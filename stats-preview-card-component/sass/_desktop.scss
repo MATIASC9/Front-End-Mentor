@@ -1,0 +1,49 @@
+@media screen and (min-width: 1000px) {
+  body {
+    flex-direction: row;
+
+    .tarjeta {
+      width: 80%;
+      max-width: 1440px;
+      flex-direction: row;
+      height: 400px;
+      
+      &__img {
+        height: 100%;
+        order: 2;
+        background-position: center;
+        margin-bottom: 0;
+        border-radius: 0 10px 10px 0;
+      }
+      &__containerDesktop {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        order: 1;
+        padding: 65px;
+      }
+      &__titulo {
+        text-align: start;
+        font-size: 2rem;
+        width: 90%;
+        margin-top: 20px;
+      }
+      &__detalles {
+        width: 90%;
+        text-align: start;
+        margin-bottom: 60px;
+      }
+      &__contenedorEstadisticas {
+        width: 80%;
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+        text-align: start;
+
+        &__dato {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }  
+}
