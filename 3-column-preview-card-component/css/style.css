@@ -19,7 +19,7 @@ body .tiposDeVehiculos {
   grid-template-columns: auto;
   grid-template-rows: auto auto auto;
   width: 90%;
-  height: fit-content;
+  height: auto;
   max-width: 375px;
   border-radius: 7px;
   color: #f2f2f2;
@@ -32,28 +32,28 @@ body .tiposDeVehiculos__sedan, body .tiposDeVehiculos__lujo, body .tiposDeVehicu
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 400px;
 }
 body .tiposDeVehiculos__sedan__icono, body .tiposDeVehiculos__lujo__icono, body .tiposDeVehiculos__suvs__icono {
   width: 25%;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 body .tiposDeVehiculos__sedan__titulo, body .tiposDeVehiculos__lujo__titulo, body .tiposDeVehiculos__suvs__titulo {
   font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
   font-size: 2rem;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 body .tiposDeVehiculos__sedan__descripcion, body .tiposDeVehiculos__lujo__descripcion, body .tiposDeVehiculos__suvs__descripcion {
   font-size: 0.9rem;
   font-weight: 400;
-  line-height: 1.5;
   line-height: 25px;
+  margin-bottom: 25px;
 }
 body .tiposDeVehiculos__sedan__btn, body .tiposDeVehiculos__lujo__btn, body .tiposDeVehiculos__suvs__btn {
   display: flex;
   background-color: #f2f2f2;
-  border-radius: 25px;
+  border-radius: 35px;
   height: 50px;
   width: 150px;
   justify-content: center;
@@ -78,6 +78,39 @@ body .tiposDeVehiculos__lujo {
 }
 body .tiposDeVehiculos__lujo__btn {
   color: #004241;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    flex-direction: row;
+    margin: auto;
+    height: 100vh;
+  }
+  body .tiposDeVehiculos {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    max-width: fit-content;
+    width: 50%;
+    height: 600px;
+  }
+  body .tiposDeVehiculos__sedan, body .tiposDeVehiculos__suvs, body .tiposDeVehiculos__lujo {
+    justify-content: flex-start;
+    height: 600px;
+  }
+  body .tiposDeVehiculos__sedan__icono, body .tiposDeVehiculos__suvs__icono, body .tiposDeVehiculos__lujo__icono {
+    margin-bottom: 40px;
+  }
+  body .tiposDeVehiculos__sedan__titulo, body .tiposDeVehiculos__suvs__titulo, body .tiposDeVehiculos__lujo__titulo {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+  }
+  body .tiposDeVehiculos__sedan__descripcion, body .tiposDeVehiculos__suvs__descripcion, body .tiposDeVehiculos__lujo__descripcion {
+    height: 100%;
+    margin: 0;
+  }
+  body .tiposDeVehiculos__sedan__btn, body .tiposDeVehiculos__suvs__btn, body .tiposDeVehiculos__lujo__btn {
+    height: 70px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

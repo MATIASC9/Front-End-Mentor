@@ -1,0 +1,36 @@
+@media screen and (min-width: 1000px) {
+
+  body {
+    flex-direction: row;
+    margin: auto;
+    height: 100vh;
+
+    .tiposDeVehiculos {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      max-width: fit-content;
+      width: 50%;
+      height: 600px;
+
+      &__sedan {
+        justify-content: flex-start;
+        height: 600px;
+
+        &__icono {
+          margin-bottom: 40px;
+        }
+        &__titulo {
+          font-size: 2.5rem;
+          margin-bottom: 25px;
+        }
+        &__descripcion {
+          height: 100%;
+          margin: 0;
+        }
+        &__btn {
+          height: 70px;
+        }
+      }
+    }
+  }
+}
