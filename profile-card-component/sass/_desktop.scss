@@ -1,0 +1,12 @@
+@media screen and (max-width: 1280px) { 
+  body {
+    background-position: 45vw 50vh, -25vw -45vh;
+    background-size: 1000px, 900px;
+  }
+}
+@media screen and (min-width: 1281px) { 
+  body {
+    background-position: 45vw 50vh, -10vw -50vh;
+    background-size: 1400px, 1100px;
+  }
+}

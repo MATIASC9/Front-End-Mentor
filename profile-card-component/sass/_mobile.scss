@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+body {
+  background-image: url(../images/bg-pattern-bottom.svg), url(../images/bg-pattern-top.svg);
+  background-position: 45vw 50vh, -90vw -35vh;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 800px, 550px;
+  background-color: hsl(185, 75%, 39%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .tarjetaPerfil {
+    background-color: hsl(0, 0%, 95%);
+    width: 90%;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+
+    &__imgCabecera {
+      width: 100%;
+      height: 150px;
+      margin-bottom: 70px;
+    }
+    &__imgPerfil {
+      width: 100px;
+      border: 5px solid hsl(0, 0%, 95%);
+      border-radius: 50%;
+      position: absolute;
+      top: 100px;
+    }
+    &__contenedorDatosPersona {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+
+      &__contenedorNyE {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 10px;
+
+        &__nombre {
+          font-size: 1.2rem;
+          font-weight: 700;
+          margin-right: 10px;
+        }
+        &__edad {
+          font-size: 1.2rem;
+          font-weight: 400;
+          color: hsl(227, 10%, 46%);
+        }
+      }
+      &__ciudad {
+        color: hsl(0, 0%, 59%);
+      }
+    }
+    &__contenedorEstadisticas {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      border-top: 1px solid hsla(0, 0%, 59%, 0.425);
+      padding-bottom: 25px;
+      padding-top: 30px;
+
+      &__seguidores {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+
+        &__cifra {
+          font-size: 1.3rem;
+          font-weight: 700;
+          color: hsl(0, 0%, 0%);
+        }
+        &__titulo {
+          font-size: 0.8rem;
+          font-weight: 400;
+          color: hsl(0, 0%, 59%);
+        }
+      }
+      &__meGustas {
+        @extend .tarjetaPerfil__contenedorEstadisticas__seguidores;
+
+        &__cifra {
+          @extend .tarjetaPerfil__contenedorEstadisticas__seguidores__cifra
+        }
+        &__titulo {
+          @extend .tarjetaPerfil__contenedorEstadisticas__seguidores__titulo
+        }
+      }
+      &__fotos {
+        @extend .tarjetaPerfil__contenedorEstadisticas__seguidores;
+
+        &__cifra {
+          @extend .tarjetaPerfil__contenedorEstadisticas__seguidores__cifra
+        }
+        &__titulo {
+          @extend .tarjetaPerfil__contenedorEstadisticas__seguidores__titulo
+        }
+      }
+    }
+  }
+}
