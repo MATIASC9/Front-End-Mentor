@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background-image: url(../images/bg-pattern-bottom.svg), url(../images/bg-pattern-top.svg);
+  background-position: 45vw 50vh, -90vw -35vh;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 800px, 550px;
+  background-color: #19a2ae;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .tarjetaPerfil {
+  background-color: #f2f2f2;
+  width: 90%;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+body .tarjetaPerfil__imgCabecera {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 70px;
+}
+body .tarjetaPerfil__imgPerfil {
+  width: 100px;
+  border: 5px solid #f2f2f2;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+}
+body .tarjetaPerfil__contenedorDatosPersona {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+body .tarjetaPerfil__contenedorDatosPersona__contenedorNyE {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+body .tarjetaPerfil__contenedorDatosPersona__contenedorNyE__nombre {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-right: 10px;
+}
+body .tarjetaPerfil__contenedorDatosPersona__contenedorNyE__edad {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #6a6f81;
+}
+body .tarjetaPerfil__contenedorDatosPersona__ciudad {
+  color: #969696;
+}
+body .tarjetaPerfil__contenedorEstadisticas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid rgba(150, 150, 150, 0.425);
+  padding-bottom: 25px;
+  padding-top: 30px;
+}
+body .tarjetaPerfil__contenedorEstadisticas__seguidores, body .tarjetaPerfil__contenedorEstadisticas__fotos, body .tarjetaPerfil__contenedorEstadisticas__meGustas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+body .tarjetaPerfil__contenedorEstadisticas__seguidores__cifra, body .tarjetaPerfil__contenedorEstadisticas__fotos__cifra, body .tarjetaPerfil__contenedorEstadisticas__meGustas__cifra {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: black;
+}
+body .tarjetaPerfil__contenedorEstadisticas__seguidores__titulo, body .tarjetaPerfil__contenedorEstadisticas__fotos__titulo, body .tarjetaPerfil__contenedorEstadisticas__meGustas__titulo {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #969696;
+}
+@media screen and (max-width: 1280px) {
+  body {
+    background-position: 45vw 50vh, -25vw -45vh;
+    background-size: 1000px, 900px;
+  }
+}
+@media screen and (min-width: 1281px) {
+  body {
+    background-position: 45vw 50vh, -10vw -50vh;
+    background-size: 1400px, 1100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
