@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  display: flex;
+  place-content: center;
+  margin: 50px 0;
+  background-color: hsl(0, 0%, 98%);
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    text-align: center;
+    max-width: 350px;
+
+    &__titulosInfo {
+
+      &__titulo1 {
+        font-size: 1.5rem;
+        font-weight: 200;
+        color: hsl(234, 12%, 34%);
+      }
+      &__titulo2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: hsl(234, 12%, 34%);
+      }
+      &__descripcion {
+        font-size: 1rem;
+        font-weight: 400;
+        color: hsl(229, 6%, 66%);
+        margin-bottom: 60px;
+      }
+    }
+    &__caracteristicas {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      width: 100%;
+      gap: 40px;
+
+      &__supervisor {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        border-top: 4px solid hsl(180, 62%, 55%);
+        border-radius: 5px;
+        box-shadow: 7px 7px 40px 0 hsl(229, 6%, 66%);
+
+        &__titulo {
+          font-size: 1.3rem;
+          font-weight: 600;
+          color: hsl(234, 12%, 34%);
+          margin-bottom: 10px;
+        }
+        &__descripcion {
+          font-size: 0.8rem;
+          font-weight: 400;
+          color: hsl(229, 6%, 66%);
+          margin-bottom: 10px;
+          margin-bottom: 30px;
+        }
+        &__icono {
+          align-self: flex-end;
+          width: 60px;
+        }
+      }
+      &__teamBuilder {
+        @extend .contenedor__caracteristicas__supervisor;
+        border-top: 4px solid hsl(0, 78%, 62%);
+
+        &__titulo {
+          @extend .contenedor__caracteristicas__supervisor__titulo;
+        }
+        &__descripcion {
+          @extend .contenedor__caracteristicas__supervisor__descripcion;
+        }
+        &__icono {
+          @extend .contenedor__caracteristicas__supervisor__icono;
+        }
+      }
+      &__karma {
+        @extend .contenedor__caracteristicas__supervisor;
+        border-top: 4px solid hsl(34, 97%, 64%);
+
+        &__titulo {
+          @extend .contenedor__caracteristicas__supervisor__titulo;
+        }
+        &__descripcion {
+          @extend .contenedor__caracteristicas__supervisor__descripcion;
+        }
+        &__icono {
+          @extend .contenedor__caracteristicas__supervisor__icono;
+        }
+      }
+      &__calculator {
+        @extend .contenedor__caracteristicas__supervisor;
+        border-top: 4px solid hsl(212, 86%, 64%);
+
+        &__titulo {
+          @extend .contenedor__caracteristicas__supervisor__titulo;
+        }
+        &__descripcion {
+          @extend .contenedor__caracteristicas__supervisor__descripcion;
+        }
+        &__icono {
+          @extend .contenedor__caracteristicas__supervisor__icono;
+        }
+      }
+    }
+  }
+}
