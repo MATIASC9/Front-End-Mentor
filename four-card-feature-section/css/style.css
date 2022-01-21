@@ -2,6 +2,80 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  place-content: center;
+  margin: 50px 0;
+  background-color: #fafafa;
+}
+body .contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  text-align: center;
+  max-width: 350px;
+}
+body .contenedor__titulosInfo__titulo1 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #4c4e61;
+}
+body .contenedor__titulosInfo__titulo2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #4c4e61;
+}
+body .contenedor__titulosInfo__descripcion {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #a3a5ae;
+  margin-bottom: 60px;
+}
+body .contenedor__caracteristicas {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 100%;
+  gap: 40px;
+}
+body .contenedor__caracteristicas__supervisor, body .contenedor__caracteristicas__calculator, body .contenedor__caracteristicas__karma, body .contenedor__caracteristicas__teamBuilder {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border-top: 4px solid #45d3d3;
+  border-radius: 5px;
+  box-shadow: 7px 7px 40px 0 #a3a5ae;
+}
+body .contenedor__caracteristicas__supervisor__titulo, body .contenedor__caracteristicas__calculator__titulo, body .contenedor__caracteristicas__karma__titulo, body .contenedor__caracteristicas__teamBuilder__titulo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #4c4e61;
+  margin-bottom: 10px;
+}
+body .contenedor__caracteristicas__supervisor__descripcion, body .contenedor__caracteristicas__calculator__descripcion, body .contenedor__caracteristicas__karma__descripcion, body .contenedor__caracteristicas__teamBuilder__descripcion {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #a3a5ae;
+  margin-bottom: 10px;
+  margin-bottom: 30px;
+}
+body .contenedor__caracteristicas__supervisor__icono, body .contenedor__caracteristicas__calculator__icono, body .contenedor__caracteristicas__karma__icono, body .contenedor__caracteristicas__teamBuilder__icono {
+  align-self: flex-end;
+  width: 60px;
+}
+body .contenedor__caracteristicas__teamBuilder {
+  border-top: 4px solid #ea5353;
+}
+body .contenedor__caracteristicas__karma {
+  border-top: 4px solid #fcaf4a;
+}
+body .contenedor__caracteristicas__calculator {
+  border-top: 4px solid #549ef2;
 }
 
 /*# sourceMappingURL=style.css.map */
