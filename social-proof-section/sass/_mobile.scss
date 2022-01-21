@@ -7,18 +7,15 @@
 body {
   display: flex;
   flex-direction: column;
-  height: max-content;
-  margin: auto 0;
   justify-content: center;
   align-items: center;
 
   .container {
     width: 90%;
     max-width: 350px;
-    height: 100%;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto;
     place-content: center;
     margin: 80px 0;
 
@@ -78,12 +75,15 @@ body {
     }
     &__opiniones {
       display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 1fr 1fr 1fr;
       gap: 15px;
 
       &__smith {
         background-color: hsl(300, 43%, 22%);
         border-radius: 8px;
         padding: 35px;
+        height: max-content;
 
         &__contenedorFotoNombreInsignia {
           display: flex;

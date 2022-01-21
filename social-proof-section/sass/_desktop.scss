@@ -1,0 +1,66 @@
+@media screen and (min-width: 1000px) { 
+  body {
+    background: url(../images/bg-pattern-bottom-desktop.svg) bottom right/100px no-repeat fixed, url(../images/bg-pattern-top-desktop.svg) top left/100px no-repeat;
+    height: 100vh;
+
+    .container {
+      width: 75%;
+      max-width: none;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      grid-template-areas: 
+      "info calificaciones"
+      "opiniones opiniones"
+      ;
+
+      &__info {
+        align-items: flex-start;
+        grid-area: info;
+        width: 60%;
+
+        &__titulo {
+          text-align: start;
+          font-size: 3rem;
+          line-height: 45px;
+          width: 100%;
+        }
+        &__descripcion {
+          text-align: start;
+        }
+      }
+      &__calificaciones {
+        width: 100%;
+        grid-area: calificaciones;
+        align-items: flex-end;
+        
+        &__container2 {
+          flex-direction: row;
+          padding: 20px 30px;
+          width: 90%;
+          
+          &__estrellas {
+            width: 150px;
+            margin-right: 70px;
+            margin-bottom: 0;
+          }
+          &__rating {
+            font-size: 1rem;
+          }
+        }
+      }
+      &__opiniones {
+        gap: 30px;
+        grid-area: opiniones;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+
+        &__roberts {
+          margin-top: 20px;
+        }
+        &__wallace {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
