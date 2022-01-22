@@ -1,0 +1,48 @@
+@media screen and (min-width: 1000px) {
+  body {
+    height: 100vh;
+    margin: 0;
+
+    .contenedor {
+      width: 70%;
+      max-width: none;
+
+      &__titulosInfo {
+
+        &__titulo1 {
+          font-size: 2.2rem;
+        }
+        &__titulo2 {
+          font-size: 2.2rem;
+        }
+        &__descripcion {
+          width: 60%;
+        }
+      }
+      &__caracteristicas {
+        display: grid;
+        gap: 25px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "supervisor teamBuilder calculator"
+        "supervisor karma calculator";
+        ;
+
+        &__supervisor {
+          grid-area: supervisor;
+          align-self: center;
+        }
+        &__teamBuilder {
+          grid-area: teamBuilder;
+        }
+        &__karma {
+          grid-area: karma;
+        }
+        &__calculator {
+          grid-area: calculator;
+        }
+      }
+    }
+  }
+}
