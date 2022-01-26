@@ -1,0 +1,113 @@
+@media screen and (min-width: 1000px) {
+  body {
+    background: url(../images/bg-header-desktop.png) no-repeat center top;
+
+    .contenedor {
+      width: 100%;
+      max-width: none;
+
+      &__historia {
+        width: 40%;
+
+        &__botones {
+          flex-direction: row;
+          width: 70%;
+
+          &__ios {
+            font-size: 1rem;
+          }
+        }
+      }
+      &__snippets {
+        width: 100%;
+
+        &__descripcion {
+          width: 40%;
+          margin-bottom: 80px;
+        }
+
+        &__imgCarac {
+          flex-direction: row;
+          width: 100%;
+
+          &__img {
+            margin-left: -50px;
+            width: 50%;
+          }
+          &__caracteristicas {
+            width: 25%;
+            margin-left: 80px;
+            align-items: flex-start;
+            text-align: start;
+            padding-top: 90px;
+          }
+        }
+      }
+      &__clipboard {
+        width: 100%;
+
+        &__descripcion {
+          width: 40%;
+          margin-bottom: 80px;
+        }
+        &__img {
+          width: 50%;
+          margin-bottom: 80px;
+        }
+      }
+      &__workflow {
+        width: 100%;
+
+        &__caracteristicas {
+          width: 80%;
+          flex-direction: row;
+          justify-content: center;
+          margin-bottom: 120px;
+
+          &__blacklist {
+            width: 50%;
+          }
+          &__snippets {
+            width: 50%;
+          }
+          &__preview {
+            width: 50%;
+
+            &__descripcion {
+              margin: 0;
+            }
+          }
+        }
+      }
+      &__patrocinadores {
+        flex-direction: row;
+        width: 80%;
+      }
+      &__descarga {
+
+        &__botones {
+          flex-direction: row;
+          width: 70%;
+        }
+      }
+    }
+    .footer {
+      flex-direction: row;
+      justify-content: space-around;
+
+      &__iconoCopy {
+        margin: 0;
+      }
+      &__extras {
+        flex-flow: row;
+        flex-wrap: wrap;
+        width: 20%;
+        height: 50px;
+        margin: 0;
+      }
+      &__redesSociales {
+        width: 20%;
+      }
+    }
+  }
+}
