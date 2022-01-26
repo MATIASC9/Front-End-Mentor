@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+  background: url(../images/bg-header-mobile.png) no-repeat center top;
+  margin: 100px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .contenedor {
+  width: 85%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .contenedor__historia, body .contenedor__descarga, body .contenedor__workflow, body .contenedor__clipboard, body .contenedor__snippets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body .contenedor__historia__iconoCopy {
+  margin-bottom: 70px;
+}
+body .contenedor__historia__titulo, body .contenedor__descarga__titulo, body .contenedor__workflow__titulo, body .contenedor__clipboard__titulo, body .contenedor__snippets__titulo {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #4c545d;
+}
+body .contenedor__historia__descripcion, body .contenedor__descarga__descripcion, body .contenedor__workflow__descripcion, body .contenedor__clipboard__descripcion, body .contenedor__snippets__caracteristicas__contenedor1__descripcion, body .contenedor__workflow__caracteristicas__preview__descripcion, body .contenedor__workflow__caracteristicas__snippets__descripcion, body .contenedor__workflow__caracteristicas__blacklist__descripcion, body .contenedor__snippets__caracteristicas__contenedor3__descripcion, body .contenedor__snippets__caracteristicas__contenedor2__descripcion, body .contenedor__snippets__descripcion {
+  line-height: 25px;
+  margin-bottom: 50px;
+  color: #9fabb2;
+}
+body .contenedor__historia__botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+  margin-bottom: 150px;
+}
+body .contenedor__historia__botones__ios, body .contenedor__descarga__botones__ios, body .contenedor__historia__botones__mac, body .contenedor__descarga__botones__mac {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #26baa4;
+  height: 55px;
+  border-radius: 30px;
+  width: 100%;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  font-size: 1.1rem;
+  border-bottom: 3px solid #1f9886;
+}
+body .contenedor__historia__botones__ios:hover, body .contenedor__descarga__botones__ios:hover, body .contenedor__historia__botones__mac:hover, body .contenedor__descarga__botones__mac:hover {
+  background-color: #2bd4ba;
+}
+body .contenedor__historia__botones__mac, body .contenedor__descarga__botones__mac {
+  background-color: #6173ff;
+  border-bottom: 3px solid #0015b8;
+}
+body .contenedor__historia__botones__mac:hover, body .contenedor__descarga__botones__mac:hover {
+  background-color: #808eff;
+}
+body .contenedor__snippets__img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+body .contenedor__snippets__caracteristicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  margin-bottom: 180px;
+  width: 95%;
+}
+body .contenedor__snippets__caracteristicas__contenedor1__titulo, body .contenedor__workflow__caracteristicas__preview__titulo, body .contenedor__workflow__caracteristicas__snippets__titulo, body .contenedor__workflow__caracteristicas__blacklist__titulo, body .contenedor__snippets__caracteristicas__contenedor3__titulo, body .contenedor__snippets__caracteristicas__contenedor2__titulo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #4c545d;
+}
+body .contenedor__snippets__caracteristicas__contenedor1__descripcion, body .contenedor__workflow__caracteristicas__preview__descripcion, body .contenedor__workflow__caracteristicas__snippets__descripcion, body .contenedor__workflow__caracteristicas__blacklist__descripcion, body .contenedor__snippets__caracteristicas__contenedor3__descripcion, body .contenedor__snippets__caracteristicas__contenedor2__descripcion {
+  margin-bottom: 0;
+}
+body .contenedor__clipboard__img {
+  width: 100%;
+  margin-bottom: 150px;
+}
+body .contenedor__workflow__descripcion {
+  margin-bottom: 90px;
+}
+body .contenedor__workflow__caracteristicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+body .contenedor__workflow__caracteristicas__blacklist__img, body .contenedor__workflow__caracteristicas__preview__img, body .contenedor__workflow__caracteristicas__snippets__img {
+  margin-bottom: 30px;
+}
+body .contenedor__workflow__caracteristicas__preview__descripcion {
+  margin-bottom: 120px;
+}
+body .contenedor__patrocinadores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 200px;
+  width: 40%;
+}
+body .contenedor__patrocinadores__google, body .contenedor__patrocinadores__vg, body .contenedor__patrocinadores__hp, body .contenedor__patrocinadores__microsoft, body .contenedor__patrocinadores__ibm {
+  width: 100%;
+}
+body .contenedor__descarga__titulo {
+  font-size: 1.7rem;
+}
+body .contenedor__descarga__botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 150px;
+}
+body .contenedor__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f3f4;
+  padding: 50px 0;
+  width: 100%;
+}
+body .contenedor__footer__iconoCopy {
+  width: 50px;
+  margin-bottom: 40px;
+}
+body .contenedor__footer__extras {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  color: #4c545d;
+}
+body .contenedor__footer__extras__faqs:hover, body .contenedor__footer__extras__instalacion:hover, body .contenedor__footer__extras__prensa:hover, body .contenedor__footer__extras__privacidad:hover, body .contenedor__footer__extras__contacto:hover {
+  cursor: pointer;
+  color: #1f9886;
+}
+body .contenedor__footer__redesSociales {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+body .contenedor__footer__redesSociales__facebook:hover, body .contenedor__footer__redesSociales__instagram:hover, body .contenedor__footer__redesSociales__twitter:hover {
+  cursor: pointer;
+  filter: invert(44%) sepia(76%) saturate(440%) hue-rotate(122deg) brightness(96%) contrast(85%);
+}
+
+/*# sourceMappingURL=style.css.map */
