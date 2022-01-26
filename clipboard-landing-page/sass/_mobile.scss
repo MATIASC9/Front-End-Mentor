@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+body {
+  background: url(../images/bg-header-mobile.png) no-repeat center top;
+  margin: 100px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .contenedor {
+    width: 85%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__historia {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      &__iconoCopy {
+        margin-bottom: 70px;
+      }
+      &__titulo {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 12px;
+        color: hsl(210, 10%, 33%);
+      }
+      &__descripcion {
+        line-height: 25px;
+        margin-bottom: 50px;
+        color: hsl(201, 11%, 66%);
+      }
+      &__botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 90%;
+        margin-bottom: 150px;
+
+        &__ios {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: hsl(171, 66%, 44%);
+          height: 55px;
+          border-radius: 30px;
+          width: 100%;
+          text-decoration: none;
+          font-weight: 600;
+          color: hsl(0, 0%, 100%);
+          font-size: 1.1rem;
+          border-bottom: 3px solid hsl(171, 66%, 36%);
+
+          &:hover {
+            background-color: hsl(171, 66%, 50%);
+          }
+        }
+        &__mac {
+          @extend .contenedor__historia__botones__ios;
+          background-color: hsl(233, 100%, 69%);
+          border-bottom: 3px solid hsl(233, 100%, 36%);
+
+          &:hover {
+            background-color: hsl(233, 100%, 75%);
+          }
+        }
+      }
+    }
+    &__snippets {
+      @extend .contenedor__historia;
+
+      &__titulo {
+        @extend .contenedor__historia__titulo;
+      }
+      &__descripcion {
+        @extend .contenedor__historia__descripcion;
+      }
+      &__img {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      &__caracteristicas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+        margin-bottom: 180px;
+        width: 95%;
+
+        &__contenedor1 {
+          &__titulo {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: hsl(210, 10%, 33%);
+          }
+          &__descripcion {
+            @extend .contenedor__historia__descripcion;
+            margin-bottom: 0;
+          }
+        }
+        &__contenedor2 {
+          &__titulo {
+            @extend .contenedor__snippets__caracteristicas__contenedor1__titulo;
+          }
+          &__descripcion {
+            @extend .contenedor__snippets__caracteristicas__contenedor1__descripcion;
+          }
+        }
+        &__contenedor3 {
+          &__titulo {
+            @extend .contenedor__snippets__caracteristicas__contenedor1__titulo;
+          }
+          &__descripcion {
+            @extend .contenedor__snippets__caracteristicas__contenedor1__descripcion;
+          }
+        }
+      }
+    }
+    &__clipboard {
+      @extend .contenedor__historia;
+
+      &__titulo {
+        @extend .contenedor__historia__titulo;
+      }
+      &__descripcion {
+        @extend .contenedor__historia__descripcion;
+      }
+      &__img {
+        width: 100%;
+        margin-bottom: 150px;
+      }
+    }
+    &__workflow {
+      @extend .contenedor__historia;
+
+      &__titulo {
+        @extend .contenedor__historia__titulo;
+      }
+      &__descripcion {
+        @extend .contenedor__historia__descripcion;
+        margin-bottom: 90px;
+      }
+      &__caracteristicas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+        &__blacklist {
+          &__img {
+            margin-bottom: 30px;
+          }
+          &__titulo {
+            @extend .contenedor__snippets__caracteristicas__contenedor1__titulo;
+          }
+          &__descripcion {
+            @extend .contenedor__snippets__caracteristicas__contenedor1__descripcion;
+          }
+        }
+        &__snippets {
+          &__img {
+            @extend .contenedor__workflow__caracteristicas__blacklist__img;
+          }
+          &__titulo {
+            @extend .contenedor__snippets__caracteristicas__contenedor1__titulo;
+          }
+          &__descripcion {
+            @extend .contenedor__snippets__caracteristicas__contenedor1__descripcion;
+          }
+        }
+        &__preview {
+          &__img {
+            @extend .contenedor__workflow__caracteristicas__blacklist__img;
+          }
+          &__titulo {
+            @extend .contenedor__snippets__caracteristicas__contenedor1__titulo;
+          }
+          &__descripcion {
+            @extend .contenedor__snippets__caracteristicas__contenedor1__descripcion;
+            margin-bottom: 120px;
+          }
+        }
+      }
+    }
+    &__patrocinadores {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 80px;
+      margin-bottom: 200px;
+      width: 40%;
+
+      &__google {
+        width: 100%;
+      }
+      &__ibm {
+        @extend .contenedor__patrocinadores__google;
+      }
+      &__microsoft {
+        @extend .contenedor__patrocinadores__google;
+      }
+      &__hp {
+        @extend .contenedor__patrocinadores__google;
+      }
+      &__vg {
+        @extend .contenedor__patrocinadores__google;
+      }
+    }
+    &__descarga {
+      @extend .contenedor__historia;
+
+      &__titulo {
+        @extend .contenedor__historia__titulo;
+        font-size: 1.7rem;
+      }
+      &__descripcion {
+        @extend .contenedor__historia__descripcion;
+      }
+      &__botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        margin-bottom: 150px;
+
+        &__ios {
+          @extend .contenedor__historia__botones__ios;
+        }
+        &__mac {
+          @extend .contenedor__historia__botones__mac;
+        }
+      }
+    }
+    &__footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: hsl(201, 11%, 95%);
+      padding: 50px 0;
+      width: 100%;
+
+      &__iconoCopy {
+        width: 50px;
+        margin-bottom: 40px;
+      }
+      &__extras {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 50px;
+        color: hsl(210, 10%, 33%);
+
+        &__faqs {
+
+          &:hover {
+            cursor: pointer;
+            color: hsl(171, 66%, 36%);
+          }
+        }
+        &__contacto {
+          @extend .contenedor__footer__extras__faqs;
+        }
+        &__privacidad {
+          @extend .contenedor__footer__extras__faqs;
+        }
+        &__prensa {
+          @extend .contenedor__footer__extras__faqs;
+        }
+        &__instalacion {
+          @extend .contenedor__footer__extras__faqs;
+        }
+
+
+
+      }
+      &__redesSociales {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+
+        &__facebook {
+          
+          &:hover {
+            cursor: pointer;
+            filter: invert(44%) sepia(76%) saturate(440%) hue-rotate(122deg) brightness(96%) contrast(85%);
+          }
+        }
+        &__twitter {
+          @extend .contenedor__footer__redesSociales__facebook;
+        }
+        &__instagram {
+          @extend .contenedor__footer__redesSociales__facebook;
+        }
+      }
+    }
+  }
+}
