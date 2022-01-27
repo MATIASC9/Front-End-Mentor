@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  margin: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #cfcfcf;
+}
+body .contenedor {
+  width: 90%;
+  display: grid;
+  gap: 30px;
+  max-width: 350px;
+}
+body .contenedor__clifford, body .contenedor__whittle, body .contenedor__abrams, body .contenedor__harmon, body .contenedor__walters {
+  background-color: #7541c8;
+  border-radius: 10px;
+  padding: 30px;
+}
+body .contenedor__clifford__perfil, body .contenedor__whittle__perfil, body .contenedor__abrams__perfil, body .contenedor__harmon__perfil, body .contenedor__walters__perfil {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+body .contenedor__clifford__perfil__img, body .contenedor__whittle__perfil__img, body .contenedor__abrams__perfil__img, body .contenedor__harmon__perfil__img, body .contenedor__walters__perfil__img {
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  width: 35px;
+}
+body .contenedor__clifford__perfil__nombreInsignia__nombre, body .contenedor__whittle__perfil__nombreInsignia__nombre, body .contenedor__abrams__perfil__nombreInsignia__nombre, body .contenedor__harmon__perfil__nombreInsignia__nombre, body .contenedor__walters__perfil__nombreInsignia__nombre {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+}
+body .contenedor__clifford__perfil__nombreInsignia__insignia, body .contenedor__whittle__perfil__nombreInsignia__insignia, body .contenedor__abrams__perfil__nombreInsignia__insignia, body .contenedor__harmon__perfil__nombreInsignia__insignia, body .contenedor__walters__perfil__nombreInsignia__insignia {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+body .contenedor__clifford__opinion1, body .contenedor__whittle__opinion1, body .contenedor__abrams__opinion1, body .contenedor__harmon__opinion1, body .contenedor__walters__opinion1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+}
+body .contenedor__clifford__opinion2, body .contenedor__whittle__opinion2, body .contenedor__abrams__opinion2, body .contenedor__harmon__opinion2, body .contenedor__walters__opinion2 {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 20px;
+}
+body .contenedor__walters {
+  background-color: #48556a;
+}
+body .contenedor__harmon {
+  background-color: white;
+}
+body .contenedor__harmon__perfil__nombreInsignia__nombre {
+  color: #19212e;
+}
+body .contenedor__harmon__perfil__nombreInsignia__insignia {
+  color: rgba(25, 33, 46, 0.5);
+}
+body .contenedor__harmon__opinion1 {
+  color: #19212e;
+}
+body .contenedor__harmon__opinion2 {
+  color: rgba(25, 33, 46, 0.7);
+}
+body .contenedor__abrams {
+  background-color: #19212e;
+}
+body .contenedor__whittle {
+  background-color: white;
+}
+body .contenedor__whittle__perfil__nombreInsignia__nombre {
+  color: #19212e;
+}
+body .contenedor__whittle__perfil__nombreInsignia__insignia {
+  color: rgba(25, 33, 46, 0.5);
+}
+body .contenedor__whittle__opinion1 {
+  color: #19212e;
+}
+body .contenedor__whittle__opinion2 {
+  color: rgba(25, 33, 46, 0.7);
+}
+
+/*# sourceMappingURL=style.css.map */
