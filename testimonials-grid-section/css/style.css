@@ -19,6 +19,7 @@ body .contenedor {
   max-width: 350px;
 }
 body .contenedor__clifford, body .contenedor__whittle, body .contenedor__abrams, body .contenedor__harmon, body .contenedor__walters {
+  background: url(../images/bg-pattern-quotation.svg) no-repeat 210px 0;
   background-color: #7541c8;
   border-radius: 10px;
   padding: 30px;
@@ -55,9 +56,11 @@ body .contenedor__clifford__opinion2, body .contenedor__whittle__opinion2, body 
   line-height: 20px;
 }
 body .contenedor__walters {
+  background: none;
   background-color: #48556a;
 }
 body .contenedor__harmon {
+  background: none;
   background-color: white;
 }
 body .contenedor__harmon__perfil__nombreInsignia__nombre {
@@ -73,9 +76,11 @@ body .contenedor__harmon__opinion2 {
   color: rgba(25, 33, 46, 0.7);
 }
 body .contenedor__abrams {
+  background: none;
   background-color: #19212e;
 }
 body .contenedor__whittle {
+  background: none;
   background-color: white;
 }
 body .contenedor__whittle__perfil__nombreInsignia__nombre {
@@ -89,6 +94,37 @@ body .contenedor__whittle__opinion1 {
 }
 body .contenedor__whittle__opinion2 {
   color: rgba(25, 33, 46, 0.7);
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+  }
+  body .contenedor {
+    max-width: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "clifford clifford walters whittle" "harmon abrams abrams whittle";
+  }
+  body .contenedor__clifford, body .contenedor__walters, body .contenedor__harmon, body .contenedor__abrams, body .contenedor__whittle {
+    grid-area: clifford;
+    background-position: 400px 0;
+  }
+  body .contenedor__walters {
+    grid-area: walters;
+  }
+  body .contenedor__whittle {
+    grid-area: whittle;
+  }
+  body .contenedor__harmon {
+    grid-area: harmon;
+  }
+  body .contenedor__abrams {
+    grid-area: abrams;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

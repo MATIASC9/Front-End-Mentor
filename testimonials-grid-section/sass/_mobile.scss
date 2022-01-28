@@ -18,6 +18,7 @@ body {
     max-width: 350px;
 
     &__clifford {
+      background: url(../images/bg-pattern-quotation.svg) no-repeat 210px 0;
       background-color: hsl(263, 55%, 52%);
       border-radius: 10px;
       padding: 30px;
@@ -59,6 +60,7 @@ body {
     }
     &__walters {
       @extend .contenedor__clifford;
+      background: none;
       background-color: hsl(217, 19%, 35%);
 
       &__perfil {
@@ -87,6 +89,7 @@ body {
     }
     &__harmon {
       @extend .contenedor__clifford;
+      background: none;
       background-color: hsl(0, 0%, 100%);
 
       &__perfil {
@@ -119,6 +122,7 @@ body {
     }
     &__abrams {
       @extend .contenedor__clifford;
+      background: none;
       background-color: hsl(219, 29%, 14%);
 
       &__perfil {
@@ -147,6 +151,7 @@ body {
     }
     &__whittle {
       @extend .contenedor__clifford;
+      background: none;
       background-color: hsl(0, 0%, 100%);
 
       &__perfil {

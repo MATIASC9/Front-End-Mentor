@@ -1,0 +1,35 @@
+@media screen and (min-width: 1000px) {
+  body {
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+
+    .contenedor {
+      max-width: none;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: 
+      "clifford clifford walters whittle"
+      "harmon abrams abrams whittle"
+      ;
+      
+      &__clifford {
+        grid-area: clifford;
+        background-position: 400px 0;
+      }
+      &__walters {
+        grid-area: walters;
+      }
+      &__whittle {
+        grid-area: whittle;
+      }
+      &__harmon {
+        grid-area: harmon;
+      }
+      &__abrams {
+        grid-area: abrams;
+      }
+    }
+  }
+}
