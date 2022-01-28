@@ -103,7 +103,7 @@ body .contenedor__whittle__opinion2 {
     justify-content: center;
   }
   body .contenedor {
-    max-width: none;
+    max-width: 1440px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
