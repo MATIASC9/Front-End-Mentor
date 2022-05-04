@@ -128,4 +128,40 @@ p, h1, h2, h3, h4, h5, h6 {
       }
     }
   }
+  &__section3 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      
+      &__title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+        text-align: center;
+      }
+
+      &__description {
+        font-size: 1rem;
+        font-weight: 400;
+        color: hsl(0, 0%, 100%);
+      }
+
+      &__btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: hsl(176, 68%, 64%);
+        font-size: 0.9rem;
+        border-bottom: 1px solid hsl(176, 68%, 64%);
+        width: max-content;
+        padding-bottom: 3px;
+      }
+    }
+  }
 }

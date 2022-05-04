@@ -131,5 +131,37 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   color: hsl(0deg, 0%, 100%);
 }
+.main__section3 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.main__section3__info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main__section3__info__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+}
+.main__section3__info__description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(0deg, 0%, 100%);
+}
+.main__section3__info__btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: hsl(176deg, 68%, 64%);
+  font-size: 0.9rem;
+  border-bottom: 1px solid hsl(176deg, 68%, 64%);
+  width: max-content;
+  padding-bottom: 3px;
+}
 
 /*# sourceMappingURL=style.css.map */
