@@ -14,6 +14,9 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
   background-color: hsl(217, 28%, 15%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 img, picture, video, canvas, svg {
   display: block;
@@ -31,6 +34,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .header {
   display: flex;
   align-items: center;
+  width: 100%;
   margin-bottom: 30px;
 
   &__nav {
@@ -54,6 +58,45 @@ p, h1, h2, h3, h4, h5, h6 {
         font-size: 0.8rem;
         font-weight: 400;
       }
+    }
+  }
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+  width: 88%;
+
+  &__section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+
+    &__img {
+      margin-bottom: 10px;
+    }
+    &__title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: hsl(0, 0%, 100%);
+    }
+    &__description {
+      font-size: 1rem;
+      font-weight: 400;
+      color: hsl(0, 0%, 100%);
+    }
+    &__btnStart {
+      font-size: 1rem;
+      font-weight: 700;
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(176, 68%, 64%);
+      padding: 15px 0;
+      border-radius: 10% / 50%;
+      text-decoration: none;
+      width: 80%;
     }
   }
 }

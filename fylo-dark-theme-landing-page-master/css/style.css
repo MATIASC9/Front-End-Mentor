@@ -17,6 +17,9 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
   background-color: hsl(217deg, 28%, 15%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 img, picture, video, canvas, svg {
@@ -39,6 +42,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .header {
   display: flex;
   align-items: center;
+  width: 100%;
   margin-bottom: 30px;
 }
 .header__nav {
@@ -61,6 +65,44 @@ p, h1, h2, h3, h4, h5, h6 {
 .header__nav__menu__item {
   font-size: 0.8rem;
   font-weight: 400;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+  width: 88%;
+}
+.main__section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+}
+.main__section1__img {
+  margin-bottom: 10px;
+}
+.main__section1__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+}
+.main__section1__description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(0deg, 0%, 100%);
+}
+.main__section1__btnStart {
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(176deg, 68%, 64%);
+  padding: 15px 0;
+  border-radius: 10%/50%;
+  text-decoration: none;
+  width: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */
