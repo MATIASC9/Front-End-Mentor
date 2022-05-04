@@ -67,6 +67,7 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 150px;
   width: 88%;
+  position: relative;
 
   &__section1 {
     display: flex;
@@ -209,6 +210,59 @@ p, h1, h2, h3, h4, h5, h6 {
             color: hsl(0, 0%, 59%);
           }
         }
+      }
+    }
+  }
+  &__section5 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: hsl(217, 28%, 15%);
+    border-radius: 10px;
+    padding: 40px 30px;
+    gap: 30px;
+    box-shadow: 5px 5px 10px 5px hsla(0, 0%, 0%, 0.2);
+    // position: absolute;
+    // bottom: -200px;
+
+    &__title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: hsl(0, 0%, 100%);
+    }
+    &__description {
+      font-size: 1rem;
+      font-weight: 400;
+      color: hsl(0, 0%, 100%);
+      margin-bottom: 10px;
+    }
+    &__emailBtn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+
+      &__email {
+        font-size: 0.8rem;
+        font-weight: 400;
+        border-radius: 100px;
+        border: none;
+        width: 100%;
+        padding: 15px;
+      }
+      &__btn {
+        border: none;
+        width: 100%;
+        padding: 15px;
+        color: hsl(0, 0%, 100%);
+        font-size: 0.9rem;
+        font-weight: 700;
+        border-radius: 100px;
+        background: linear-gradient(
+          to right,
+          hsl(176, 68%, 64%),
+          hsl(198, 60%, 50%)
+        );
       }
     }
   }
