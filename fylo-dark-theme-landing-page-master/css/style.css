@@ -163,5 +163,49 @@ p, h1, h2, h3, h4, h5, h6 {
   width: max-content;
   padding-bottom: 3px;
 }
+.main__section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.main__section4__article {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: hsl(219deg, 30%, 18%);
+  border-radius: 5px;
+  gap: 20px;
+}
+.main__section4__article__opinion {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.main__section4__article__profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main__section4__article__profile__img {
+  width: 35px;
+  border-radius: 50%;
+}
+.main__section4__article__profile__info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.main__section4__article__profile__info__name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+}
+.main__section4__article__profile__info__charge {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 59%);
+}
 
 /*# sourceMappingURL=style.css.map */
