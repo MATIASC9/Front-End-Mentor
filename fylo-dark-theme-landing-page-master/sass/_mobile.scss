@@ -13,7 +13,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
-  background-color: hsl(217, 28%, 15%);
+  background-color: hsl(218, 28%, 13%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,11 +52,16 @@ p, h1, h2, h3, h4, h5, h6 {
       display: flex;
       gap: 15px;
       list-style: none;
-      color: hsl(0, 0%, 100%);
+      color: hsl(0, 0%, 40%);
 
       &__item {
         font-size: 0.8rem;
         font-weight: 400;
+
+        &:hover {
+          color: hsl(0, 0%, 90%);
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -93,11 +98,20 @@ p, h1, h2, h3, h4, h5, h6 {
       font-size: 1rem;
       font-weight: 700;
       color: hsl(0, 0%, 100%);
-      background-color: hsl(176, 68%, 64%);
+      background: linear-gradient(
+        to right,
+        hsl(176, 68%, 64%),
+        hsl(198, 60%, 50%)
+        );
       padding: 15px 0;
       border-radius: 10% / 50%;
       text-decoration: none;
       width: 80%;
+
+      &:hover {
+        cursor: pointer;
+        background: hsl(176, 68%, 64%);
+      }
     }
   }
   &__section2 {
@@ -162,6 +176,17 @@ p, h1, h2, h3, h4, h5, h6 {
         border-bottom: 1px solid hsl(176, 68%, 64%);
         width: max-content;
         padding-bottom: 3px;
+
+        &:hover {
+          cursor: pointer;
+          color: hsl(0, 0%, 90%);
+          border-bottom: 1px solid hsl(0, 0%, 90%);
+        }
+        &__icon {
+          &:hover {
+            filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(138deg) brightness(103%) contrast(101%);
+          }
+        }
       }
     }
   }
@@ -179,6 +204,7 @@ p, h1, h2, h3, h4, h5, h6 {
       background-color: hsl(219, 30%, 18%);
       border-radius: 5px;
       gap: 20px;
+      box-shadow: 1px 1px 10px 2px rgba(71, 71, 71, 0.1);
 
       &__opinion {
         color: hsl(0, 0%, 100%);
